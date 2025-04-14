@@ -18,19 +18,19 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(multiply(2, 2), 4)
-        self.assertEqual(multiply(0, 3), 0)
-        self.assertEqual(multiply(-3, 1), -3)
+        self.assertEqual(mul(2, 2), 4)
+        self.assertEqual(mul(0, 3), 0)
+        self.assertEqual(mul(-3, 1), -3)
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(divide(3, 6), 2)
-        self.assertAlmostEqual(divide(5, 10), 2.0)
-        self.assertEqual(divide(1, -5), -5)
+        self.assertEqual(div(3, 6), 2)
+        self.assertAlmostEqual(div(5, 10), 2.0)
+        self.assertEqual(div(1, -5), -5)
 
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
-            divide(0,5)
+            div(0,5)
 
     def test_logarithm(self): # 3 assertions
         with self.assertRaises(ValueError):
@@ -52,9 +52,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):
-           square_roots(-9)
-        self.assertEqual(square_roots(9), 3)
-        self.assertEqual(square_roots(25), 25)
+           square_root(-9)
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(25), 5)
 
 
 # Do not touch this
