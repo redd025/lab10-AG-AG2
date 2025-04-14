@@ -1,3 +1,6 @@
+#https://github.com/redd025/lab10-AG-AG2
+# Partner 1: Alexander Gordillo Jimenez
+
 import unittest
 from calculator import *
 
