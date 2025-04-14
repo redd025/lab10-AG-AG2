@@ -7,6 +7,14 @@ One function per operation, in order.
 # First example
 import math
 
+def square_roots(a):
+    if a<0:
+        raise ValueError("Input must be positive")
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a,b)
+
 def add(a, b):
     return a+b
 
@@ -16,12 +24,7 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero")
-    return b / a   # raise ZeroDivisionError if a == 0
-
-def logarithm(a, b): # use math library/raise ValueError
+def logarithm(a, b):
     if a <= 0 or b <= 0:
         raise ValueError("Input must be greater than 0")
     return math.log(b,a)
